@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import NavBar from './pages/navbar/navbar';
+import NavBar from './components/navbar/navbar';
 import About from './pages/about/about';
 import Header from './pages/header/header';
 import Footer from './pages/footer/footer';
