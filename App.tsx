@@ -1,11 +1,25 @@
 import * as React from 'react';
+
+import NavBar from './pages/navbar/navbar';
+import About from './pages/about/about';
+import Header from './pages/header/header';
+import Footer from './pages/footer/footer';
+import Portfolio from './pages/portfolio/portfolio';
+import Resume from './pages/resume/resume';
+import Services from './pages/services/services';
+
 import './style.css';
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <NavBar />
+      <Header />
+      <About />
+      <Services />
+      <Resume />
+      <Portfolio />
+      <Footer />
     </div>
   );
 }
