@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-// import { AppWrap, MotionWrap } from '../../wrapper';
 import './services.scss';
 // import { urlFor, client } from '../../client';
 
 const Services = () => {
-  // const [abouts, setAbouts] = useState([]);
-
   const abouts = [
     {
       imgUrl:
@@ -68,11 +65,5 @@ const Services = () => {
     </>
   );
 };
-
-// export default AppWrap(
-//   MotionWrap(About, 'app__about'),
-//   'about',
-//   'app__whitebg',
-// );
 
 export default Services;
