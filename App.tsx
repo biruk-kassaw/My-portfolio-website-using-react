@@ -8,11 +8,11 @@ import Portfolio from './pages/portfolio/portfolio';
 import Resume from './pages/resume/resume';
 import Services from './pages/services/services';
 
-import './style.css';
+import './app.scss';
 
 export default function App() {
   return (
-    <div>
+    <div className="app">
       <NavBar />
       <Header />
       <About />
