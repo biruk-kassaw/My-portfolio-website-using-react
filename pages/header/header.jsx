@@ -62,9 +62,9 @@ const Header = () => (
       className="app__header-circles"
     >
       {[
-        'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/node.png',
-        'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/react.png',
-        'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/redux.png',
+        'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/node.png?raw=true',
+        'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/react.png?raw=true',
+        'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/redux.png?raw=true',
       ].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />

@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <img
-          src="https://github.com/biruk-kassaw/My-portfolio-website-using-react/blob/main/biruk_logo.png?raw=true"
+          src="https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/biruk_logo.png?raw=true"
           alt="logo"
         />
       </div>
