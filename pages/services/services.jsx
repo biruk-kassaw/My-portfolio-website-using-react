@@ -19,7 +19,7 @@ const Services = () => {
     {
       imgUrl:
         'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/backend.jpg?raw=true',
-      title: 'Back END DEVELOPMENT',
+      title: 'BACK END DEVELOPMENT',
       description:
         'I make full stack web apps that are secure, maintainable and scalable using the latest web technologies.',
     },
@@ -30,13 +30,13 @@ const Services = () => {
       description:
         'I make apps that are well architected, robust, maintainable and of course testable.',
     },
-    {
-      imgUrl:
-        'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/Front-end-Development.jpeg?raw=true',
-      title: 'FRONT END DEVELOPER',
-      description:
-        'I design and code Beautiful, Fast, Responsive, Intuitive and Dynamic websites from scratch, and enjoy bringing ideas to life in the browser.',
-    },
+    // {
+    //   imgUrl:
+    //     'https://github.com/biruk-kassaw/Personal-React-Portfolio/blob/main/Front-end-Development.jpeg?raw=true',
+    //   title: 'FRONT END DEVELOPER',
+    //   description:
+    //     'I design and code Beautiful, Fast, Responsive, Intuitive and Dynamic websites from scratch, and enjoy bringing ideas to life in the browser.',
+    // },
   ];
 
   return (
