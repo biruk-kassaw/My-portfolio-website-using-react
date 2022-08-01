@@ -1,5 +1,5 @@
 import React from 'react';
-
+import skills from '../../constants/skills';
 import './about.scss';
 import { motion } from 'framer-motion';
 
@@ -40,64 +40,41 @@ const About = () => {
                             </p>
                             <p>
                               <span className="title-s">Email: </span>{' '}
-                              <span>se.biruk.kassaw@gmail.com</span>
+                              <span>
+                                <a href="mailto:se.biruk.kassaw@gmail.com">
+                                  se.biruk.kassaw@gmail.com
+                                </a>
+                              </span>
                             </p>
                             <p>
                               <span className="title-s">Phone: </span>{' '}
-                              <span>+251 930 995 547</span>
+                              <span>
+                                <a href="tel:+251930995547">+251 930 995 547</a>
+                              </span>
                             </p>
                           </div>
                         </div>
                       </div>
                       <div className="skill-mf">
-                        <p className="title-s">Skill</p>
-                        <span>HTML</span>{' '}
-                        <span className="pull-right">85%</span>
-                        <div className="progress">
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: '85%;' }}
-                            aria-valuenow="85"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <span>CSS3</span>{' '}
-                        <span className="pull-right">75%</span>
-                        <div className="progress">
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: '75%' }}
-                            aria-valuenow="75"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <span>PHP</span> <span className="pull-right">50%</span>
-                        <div className="progress">
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: '50%' }}
-                            aria-valuenow="50"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <span>JAVASCRIPT</span>{' '}
-                        <span className="pull-right">90%</span>
-                        <div className="progress">
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: '90%' }}
-                            aria-valuenow="90"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
+                        <p className="title-s">SKILLS</p>
+                        <motion.div className="app__skills-list">
+                          {skills.map((skill) => (
+                            <motion.div
+                              whileInView={{ opacity: [0, 1] }}
+                              transition={{ duration: 0.5 }}
+                              className="app__skills-item app__flex"
+                              key={skill.name}
+                            >
+                              <div
+                                className="app__flex"
+                                style={{ backgroundColor: skill.bgColor }}
+                              >
+                                <img src={skill.icon} alt={skill.name} />
+                              </div>
+                              <p className="p-text">{skill.name}</p>
+                            </motion.div>
+                          ))}
+                        </motion.div>
                       </div>
                     </div>
                     <div className="col-md-6">
